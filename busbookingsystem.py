@@ -15,8 +15,6 @@ print("\nCHECK YOUR TICKET PRICE BY ENTERING YOUR PERSONAL DETAILS")
 
 Name=input("\nEnter your Name :").upper()
 Gender=input("Enter the GENDER(M/F):" )
-passenger=input("Enter (YES/NO) if you are a staff : ")
-staff_id=(input("Enter staff id :"))
 age =int(input("Enter the age :"))
 
 
@@ -29,8 +27,7 @@ else:
         print(" \nYou'll get child discount (PAY HALF OF PRICE)".upper())
     elif age>=60:
         print("\nYou'll get senior citizen discount (PAY 75% OF PRICE)".upper())
-    elif passenger=="yes"and (staff_id):
-        print("\nTicket is free")    
+        
     else:
         print("\nYou have to pay full price".upper())
         print("\n PLEASE SELECT BELOW OPTIONS TO BOOK YOUR SEATS..")
